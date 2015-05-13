@@ -1,0 +1,344 @@
+
+/* common css for all the files */
+body {
+	
+	  background-image: url('wall1.jpg');
+    background-size: 100%;
+	  height: 700px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.6;
+    word-spacing: 2px;
+    width: 700px;
+    height: 600px;
+    font-family: verdana; 
+}
+
+nav {
+	position: relative;
+	top: 100px;
+	left: 10px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:link, a:visited{
+	text-decoration: none;
+	font-weight: bold;
+	font-color: white;
+	font-size: 18px;
+	font-family: 'times new roman';
+	color: white;
+	padding: 5px;
+	text-align: center;
+	line-height: 1.6;
+	transition: all .5s ease-in-out;
+
+}
+
+a:hover, a:active {
+	transform: scale(1.2);	
+
+} 
+
+.links {
+	list-style-type: none;
+	margin: 0px;
+
+}
+	/* css for index page */
+	
+.top {
+	
+	height: 500px;
+}
+
+@-webkit-keyframes slider {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes slider {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes slider {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes slider {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+#image {
+  position:relative;
+  left: 100px;
+  height: 150px;
+  width: 200px;
+}
+#image img {
+	  position:absolute;
+	  left: 300px;
+	  top: -200px;
+	  height: 400px;
+	  width: 700px;
+	  border: 1px solid #AD5C33;
+	  border-radius: 10px;
+}
+
+#image img {
+  -webkit-animation-name: slider;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+
+  -moz-animation-name: slider;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+
+  -o-animation-name: slider;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 8s;
+
+  animation-name: slider;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+
+#image img:nth-of-type(1) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+#image img:nth-of-type(2) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+#image img:nth-of-type(3) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+#image img:nth-of-type(4) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+}
+
+.section {
+	padding: 10px 20px;
+}
+
+img.speak {
+	width: 250px;
+	height: 250px;
+	border: 1px solid #AD5C33;
+	border-radius: 250px;
+}
+
+.text {
+position: relative;
+left: 280px;
+top: -275px;
+width: 800px;
+height: 280px;
+padding: 10px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+border: 1px solid #AD5C33;      
+}
+
+.text:after {
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 15px 15px 0;
+border-color: transparent #AD5C33;
+display: block;
+width: 0;
+z-index: 1;
+left: -15px;
+top: 100px;
+}
+
+.heading {
+  font-weight: bold;
+  font-family: cursive;
+  position: relative;
+  left: -30px;
+}
+
+
+
+	/* css for about me page  */
+
+.content {
+	position: relative;
+	top: -200px;
+	left: 350px;
+	border: 1px solid #AD5C33;
+	border-radius: 10px;
+	padding: 10px;
+	width: 800px;
+  
+}
+
+.about {
+    position: relative;
+    left: -250px;
+    border:1px solid #AD5C33;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* css for acads page */
+
+.acads {
+    position: relative;
+    left: -250px;
+    border:1px solid #AD5C33;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* css for skills page */
+.skills {
+    position: relative;
+    left: -250px;
+    border:1px solid #AD5C33;
+    border-radius: 15px;
+    padding: 10px;   
+}
+
+/* css for achievements page */
+.achievements {
+    position: relative;
+    left: -250px; 
+    border:1px solid #AD5C33;
+    border-radius: 15px;
+    padding: 10px;  
+}
+
+/* css for hobbies page */
+.hobbies {
+    position: relative;
+    left: -250px;
+    border:1px solid #AD5C33;
+    border-radius: 15px;
+    padding: 10px;   
+}
+
+dt {
+    font-weight: bold;
+}
+
+/* css for aspirations page */
+.aspirations {
+    position: relative;
+    left: -250px; 
+    border:1px solid #AD5C33;
+    border-radius: 15px;
+    padding: 10px;  
+}
+
+/* css for contact me page */
+
+.content1 {
+  position: relative;
+  top: -500px;
+  left: 600px;
+}
+
+.connect {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.connect>li {
+  display: inline;
+}
+
+.conn {
+    width: 50px;
+    height: 50px;
+    -webkit-transition-property: width, height; /* For Safari 3.1 to 6.0 */
+    -webkit-transition-duration: 1s;    /* For Safari 3.1 to 6.0 */
+    transition-property: width, height;
+    transition-duration: 1s;
+}
+
+.conn:hover {
+    width: 65px;
+    height: 65px;
+}
+
